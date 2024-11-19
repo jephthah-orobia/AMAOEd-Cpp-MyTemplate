@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "istream": "cpp",
+        "iostream": "cpp",
+        "cstdio": "cpp",
+        "tuple": "cpp",
+        "initializer_list": "cpp",
+        "xutility": "cpp"
+    }
+}
