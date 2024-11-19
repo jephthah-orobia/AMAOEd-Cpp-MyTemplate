@@ -1,7 +1,7 @@
 /* ****************************************************************
  * @author: JEPHTHAH M. OROBIA
- * @app name: AMAOEd-Comp1-Week6 LabWorks
- * @app desc: To complete task stated in LabortoryExercise005 of ITE7101
+ * @app name: AMAOEd-Cpp-MyTemplate
+ * @app desc: This is my personalized boilerplate for C++ console app
  * ****************************************************************/
 
 #include <cstdio>
