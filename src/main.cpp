@@ -8,6 +8,8 @@
 #include <cstdlib>
 #include <iostream>
 #include <limits>
+#include <thread>
+#include <chrono>
 #include "whatsNext.h"
 
 using namespace std;
@@ -43,7 +45,9 @@ int main()
                          for (int i = 10; i > 0; i--)
                          {
                            cout << i << endl;
+                           this_thread::sleep_for(chrono::seconds(1));
                          };
+                         system("cls");
                          return main();
                        })},
       {'b', make_tuple("Count 1 to 10 the re-run app",
@@ -53,7 +57,9 @@ int main()
                          for (int i = 1; i <= 10; i++)
                          {
                            cout << i << endl;
+                           this_thread::sleep_for(chrono::seconds(1));
                          };
+                         system("cls");
                          return main();
                        })}};
 
