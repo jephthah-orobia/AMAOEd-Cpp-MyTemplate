@@ -24,6 +24,7 @@ using namespace std;
 int whatsNext(map<char, tuple<string, function<int()>>> actionMap)
 {
   // Clear the input buffer so that the console doesn't exit immediately
+  if(cin.fail()) cin.clear();
   cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
   cout << "Options:";
@@ -42,10 +43,8 @@ int whatsNext(map<char, tuple<string, function<int()>>> actionMap)
 
 
   if(actionMap.find(c) != actionMap.end()){
-    cout << "You choose to " << get<0>(actionMap[c]) << endl << "*************************************************" << endl;
     return get<1>(actionMap[c])();
   } else {
-    cout << "Exiting App" << endl << "*************************************************" << endl;
     return 0;
   }
 }
